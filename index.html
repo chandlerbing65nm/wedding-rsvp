@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wedding RSVP</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>You're Invited!</h1>
+    <p>Please RSVP below</p>
+    <form id="rsvpForm">
+      <input type="text" id="firstName" placeholder="First Name" required>
+      <input type="text" id="lastName" placeholder="Last Name" required>
+      <div class="button-group">
+        <button type="button" class="yes" onclick="submitRSVP('Yes')">Yes</button>
+        <button type="button" class="no" onclick="submitRSVP('No')">No</button>
+      </div>
+    </form>
+    <p id="responseMessage"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
